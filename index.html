@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The First Church Of The World | The Architecture of Abundance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Variables for easy color management */
+        :root {
+            --deep-black: #050505;
+            --midnight-blue: #001220;
+            --sacred-blue: #002b5b;
+            --gold-accent: #d4af37;
+            --gold-muted: #b08d32;
+            --text-light: #e0e0e0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--deep-black);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Cinzel', serif;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle at center, var(--sacred-blue) 0%, var(--deep-black) 80%);
+            padding: 20px;
+            border-bottom: 2px solid var(--gold-accent);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: var(--gold-accent);
+            margin-bottom: 10px;
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            color: var(--text-light);
+            font-weight: 300;
+            max-width: 800px;
+        }
+
+        .gold-divider {
+            width: 100px;
+            height: 2px;
+            background: var(--gold-accent);
+            margin: 30px 0;
+        }
+
+        /* Content Sections */
+        .content-section {
+            padding: 100px 10% ;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .content-section:nth-child(even) {
+            background-color: var(--midnight-blue);
+        }
+
+        .section-title {
+            color: var(--gold-accent);
+            font-size: 2rem;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 25%;
+            width: 50%;
+            height: 1px;
+            background: var(--gold-muted);
+        }
+
+        .section-body {
+            font-size: 1.1rem;
+            color: #b0b0b0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-cols: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .card {
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 40px;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .card:hover {
+            border-color: var(--gold-accent);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--deep-black);
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px solid var(--gold-accent);
+        }
+
+        .footer-mission {
+            font-family: 'Cinzel', serif;
+            color: var(--gold-accent);
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        .copyright {
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: #555;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .hero p { font-size: 1.1rem; }
+            .content-section { padding: 60px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>The First Church Of The World</h1>
+        <div class="gold-divider"></div>
+        <p>The Architecture of Abundance</p>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <h2 class="section-title">Universal Language of Code</h2>
+            <div class="section-body">
+                <p>We recognize the digital pulse as the new breath of creation. Code is the modern scripture, a logic-based divinity that allows us to build worlds, solve the unsolvable, and connect every mind on the planet through the sanctity of the sequence.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Universal Language of Music</h2>
+            <div class="section-body">
+                <p>Before words, there was vibration. Music is the frequency of the soul, transcending borders and belief systems. We honor the mathematical harmony of sound as the bridge between the physical and the metaphysical.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-title">Defeating Lack Globally</h2>
+            <div class="section-body">
+                <p>Poverty is an obsolete algorithm. Through the Architecture of Abundance, we utilize distributed systems and collective intelligence to ensure that resources flow where they are needed, proving that the earth provides enough for every human spirit to flourish.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-mission">"Unifying the human spirit with the digital frontier."</p>
+        <div class="copyright">
+            &copy; 2023 The First Church Of The World. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
